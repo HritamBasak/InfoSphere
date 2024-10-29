@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homee"
+            android:title="Home"
+            android:menuCategory="secondary"
+            android:actionLayout="@layout/fragment_home"/>
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/prof"
+            android:title="Profile"
+            android:menuCategory="secondary"
+            android:actionLayout="@layout/fragment_profile"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/cloud"
+            android:title="Weather Report"
+            android:menuCategory="secondary"
+            android:actionLayout="@layout/fragment_gallery"/>
+    </group>
+    <item android:title="Communication"
+        android:menuCategory="secondary">
+    <menu>
+        <item
+            android:id="@+id/feedbackfragment"
+            android:icon="@drawable/review"
+            android:title="FeedBack"
+            android:menuCategory="secondary"
+            android:actionLayout="@layout/fragment_feedback"/>
+        <item
+            android:id="@+id/shareFragment"
+            android:icon="@drawable/share"
+            android:title="Share"
+            android:menuCategory="secondary"
+            android:actionLayout="@layout/fragment_home"/>
+
+    </menu>
+    </item>
+    <item android:title="Others"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/outt"
+                android:title="SignOut"
+                android:menuCategory="secondary"
+                android:actionLayout="@layout/fragment_slideshow"/>
+            <item
+                android:id="@+id/morefragment"
+                android:icon="@drawable/plus"
+                android:actionLayout="@layout/fragment_more"
+                android:menuCategory="secondary"
+                android:title="More" />
+
+        </menu>
+
+
+    </item>
+</menu>

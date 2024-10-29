@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1078310895979",
+    "project_id": "infosphere-ce7cc",
+    "storage_bucket": "infosphere-ce7cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078310895979:android:d5ed24da321fc930a3cc2e",
+        "android_client_info": {
+          "package_name": "com.example.infosphere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAIyQ-kePY-iYpf8CdW5sxyTlmAMidJzo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

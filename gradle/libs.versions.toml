@@ -1,0 +1,66 @@
+[versions]
+advancedcardview = "1.0.1"
+agp = "8.5.1"
+facebookAndroidSdk = "latest.release"
+facebookLogin = "[8.2)"
+generativeai = "0.9.0"
+guavaVersion = "31.0.1-android"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+kotlinScriptRuntime = "1.8.22"
+lottie = "6.5.2"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.0.0"
+materialVersion = "1.9.0"
+newsApiJava = "1.0.0"
+newsApiJavaVersion = "1.0.2"
+picasso = "2.8"
+playServicesAuth = "21.2.0"
+lifecycleLivedataKtx = "2.8.6"
+lifecycleViewmodelKtx = "2.8.6"
+navigationFragment = "2.8.0"
+navigationUi = "2.8.0"
+firebaseStorage = "21.0.1"
+firebaseDatabase = "21.0.0"
+reactiveStreams = "1.0.4"
+volley = "1.2.1"
+
+[libraries]
+advancedcardview = { module = "com.github.sina-seyfi:AdvancedCardView", version.ref = "advancedcardview" }
+facebook-android-sdk = { module = "com.facebook.android:facebook-android-sdk", version.ref = "facebookAndroidSdk" }
+facebook-login = { module = "com.facebook.android:facebook-login", version.ref = "facebookLogin" }
+generativeai = { module = "com.google.ai.client.generativeai:generativeai", version.ref = "generativeai" }
+google-guava = { module = "com.google.guava:guava", version.ref = "guavaVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-script-runtime = { module = "org.jetbrains.kotlin:kotlin-script-runtime", version.ref = "kotlinScriptRuntime" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+news-api-java = { module = "com.github.KwabenBerko:News-API-Java", version.ref = "newsApiJava" }
+news-api-java-v102 = { module = "com.github.KwabenBerko:News-API-Java", version.ref = "newsApiJavaVersion" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+reactive-streams = { module = "org.reactivestreams:reactive-streams", version.ref = "reactiveStreams" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+
