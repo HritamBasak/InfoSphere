@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.profileFragment,R.id.feedbackfragment,R.id.morefragment)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.profileFragment,R.id.feedbackfragment,R.id.morefragment,R.id.historyFragment)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -126,6 +126,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id=item.getItemId();
+                if(id==R.id.historyFragment)
+                {
+                    navController.navigate(R.id.historyFragment);
+                }
                 if(id==R.id.shareFragment)
                 {
                     navController.navigate(R.id.shareFragment);

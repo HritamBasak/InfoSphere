@@ -76,7 +76,7 @@ public class SignUpActivity extends AppCompatActivity {
                         usersRef.child(user.getUid()).child("name").setValue(name);
                         usersRef.child(user.getUid()).child("email").setValue(email);
 
-                        Toast.makeText(SignUpActivity.this, "Account Successfully Created"+name, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, "Account Successfully Created", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();

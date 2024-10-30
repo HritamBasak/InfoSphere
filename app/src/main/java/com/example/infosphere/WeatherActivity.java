@@ -206,6 +206,10 @@ public class WeatherActivity extends AppCompatActivity {
                                 int visibility = response.getInt("visibility");
                                 binding.vis.setText(Integer.toString(visibility) + "m");
 
+//                                JSONObject jsonObject2=response.getJSONObject("sys");
+//                                String country=jsonObject2.getString("country");
+//                                binding.country.setText(country);
+
                                 switch (cond)
                                 {
                                     case "Rain":

@@ -100,8 +100,8 @@ public class MoreFragment extends Fragment {
                 Intent intent=new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_SUBJECT,"Check Out this app!");
-//            intent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.example.infosphere");
-                startActivity(intent);
+                intent.putExtra(Intent.EXTRA_TEXT,"Check out InfoSphere on Github:https://github.com/HritamBasak/InfoSphere/commit/b57290347a05a2eaf7f19b2a1dfc9919d64d3fab");
+                startActivity(Intent.createChooser(intent, "Share via"));
             }
         });
     }

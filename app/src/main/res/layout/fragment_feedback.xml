@@ -193,7 +193,9 @@
             android:drawablePadding="8dp"
             android:ems="10"
             android:gravity="top"
-            android:inputType="text"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
             android:padding="5dp" />
     </com.google.android.material.textfield.TextInputLayout>
 

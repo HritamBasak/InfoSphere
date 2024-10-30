@@ -42,4 +42,9 @@
         android:name="com.example.infosphere.ShareFragment"
         android:label="Share"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.infosphere.HistoryFragment"
+        android:label="Gemini History"
+        tools:layout="@layout/fragment_history" />
 </navigation>

@@ -44,6 +44,12 @@
         android:menuCategory="secondary">
         <menu>
             <item
+                android:id="@+id/historyFragment"
+                android:icon="@drawable/history"
+                android:title="Gemini History"
+                android:menuCategory="secondary"
+                android:actionLayout="@layout/fragment_history"/>
+            <item
                 android:id="@+id/nav_slideshow"
                 android:icon="@drawable/outt"
                 android:title="SignOut"

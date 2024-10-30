@@ -69,6 +69,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,10 +116,12 @@
                     android:foregroundGravity="center"
                     android:gravity="center"
                     android:text="How can I Help You?"
-                    android:textColor="#EEF1F4"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
+
             </LinearLayout>
+
         </ScrollView>
 
     </LinearLayout>
