@@ -188,35 +188,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent,PIC_IMAGE_REQUEST);
             }
         });
-        if(userRef!=null)
-        {
-            userRef.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    String profilePictureUrl=snapshot.child("profilePicUrl").getValue(String.class);
-                    String name=snapshot.child("name").getValue(String.class);
-                    String email=snapshot.child("email").getValue(String.class);
-                    if(profilePictureUrl!=null)
-                    {
-                        Picasso.get().load(profilePictureUrl).into(profilePic);
-                    }
-                    if(name!=null)
-                    {
-                        profileName.setText(name);
-                        userName.setText(name);
-                    }
-                    if(email!=null)
-                    {
-                        profileMail.setText(email);
-                    }
-                }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
 
-                }
-            });
-        }
+            if (userRef != null) {
+                userRef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String profilePictureUrl = snapshot.child("profilePicUrl").getValue(String.class);
+                        String name = snapshot.child("name").getValue(String.class);
+                        String email = snapshot.child("email").getValue(String.class);
+                        if (profilePictureUrl != null) {
+                            Picasso.get().load(profilePictureUrl).into(profilePic);
+                        }
+                        if (name != null) {
+                            profileName.setText(name);
+                            userName.setText(name);
+                        }
+                        if (email != null) {
+                            profileMail.setText(email);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
 
         gemini.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -227,7 +225,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    protected void onResume()
+    {
+        super.onResume();
+        if (userRef != null) {
+            userRef.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    String profilePictureUrl = snapshot.child("profilePictureUrl").getValue(String.class);
 
+                    if (profilePictureUrl != null) {
+                        Picasso.get().load(profilePictureUrl).into(profilePic);
+                    }
+                }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    // Handle error
+                }
+            });
+        }
+    }
     public void onActivityResult(int requestCode,int resultCode,Intent data)
     {
         super.onActivityResult(requestCode,resultCode,data);

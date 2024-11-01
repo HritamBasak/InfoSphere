@@ -46,6 +46,7 @@ public class GeminiActivity extends AppCompatActivity {
     EditText ask_gemini;
     TextView ans,ques;
     ImageView back;
+    ImageView send;
     RecyclerViewHistory adapter;
     List<Pojo_History> pojoHistoryList;
     @SuppressLint("MissingInflatedId")
@@ -70,12 +71,13 @@ public class GeminiActivity extends AppCompatActivity {
         ans=findViewById(R.id.textView9);
         ques=findViewById(R.id.textView8);
         back=findViewById(R.id.backk);
+        send=findViewById(R.id.send);
 
         db= FirebaseDatabase.getInstance().getReference().child("question_history").child(mUser.getUid());
-        editText.setOnClickListener(new View.OnClickListener() {
+        send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                modelCall(); // Call modelCall() here
+                modelCall();
             }
         });
         back.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +89,12 @@ public class GeminiActivity extends AppCompatActivity {
             }
         });
         adapter=new RecyclerViewHistory((ArrayList<Pojo_History>) pojoHistoryList,this);
+    }
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(GeminiActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
     public void modelCall()
     {

@@ -28,8 +28,8 @@ public class ImageActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ImageView imageView=findViewById(R.id.imageView2);
-        ImageView back=findViewById(R.id.back);
+         imageView=findViewById(R.id.imageView2);
+         back=findViewById(R.id.back_imageView);
         Intent intent=getIntent();
         String imageUrl=intent.getStringExtra("profilePictureUrl");
         if(imageUrl!=null)
@@ -42,6 +42,7 @@ public class ImageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(ImageActivity.this,ProfileFragment.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
