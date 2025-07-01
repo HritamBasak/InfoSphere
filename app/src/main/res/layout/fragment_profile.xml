@@ -7,12 +7,25 @@
     android:orientation="vertical"
     tools:context=".ProfileFragment">
 
-    <ImageView
-        android:id="@+id/prof_userImage"
-        android:layout_width="match_parent"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/prof_userImage_card"
+        android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_gravity="center"
         android:layout_margin="40dp"
-        android:src="@drawable/proff" />
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="3dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent">
+
+        <ImageView
+            android:id="@+id/prof_userImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="40dp"
+            android:src="@drawable/proff" />
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/textView"

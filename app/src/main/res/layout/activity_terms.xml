@@ -6,16 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TermsActivity"><![CDATA[
-
-
-        android:layout_height=
-        android:layout_marginLeft=10dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/resize_back" />
-
-    ]]>
-
+    tools:context=".TermsActivity">
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="150dp"

@@ -40,10 +40,15 @@ public class ImageActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ImageActivity.this,ProfileFragment.class);
-                startActivity(intent);
                 finish();
             }
         });
+    }
+    public  void onBackPressed()
+    {
+        super.onBackPressed();
+        Intent intent=new Intent(ImageActivity.this,ProfileFragment.class);
+        startActivity(intent);
+        finish();
     }
 }

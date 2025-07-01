@@ -56,7 +56,8 @@
             android:layout_width="300dp"
             android:layout_height="match_parent"
 
-            android:hint="Name">
+            android:hint="Name"
+            tools:ignore="MissingClass">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etName"

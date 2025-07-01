@@ -28,6 +28,7 @@ navigationUi = "2.8.0"
 firebaseStorage = "21.0.1"
 firebaseDatabase = "21.0.0"
 reactiveStreams = "1.0.4"
+swiperefreshlayout = "1.1.0"
 volley = "1.2.1"
 
 [libraries]
@@ -58,6 +59,7 @@ navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 reactive-streams = { module = "org.reactivestreams:reactive-streams", version.ref = "reactiveStreams" }
+swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "swiperefreshlayout" }
 volley = { module = "com.android.volley:volley", version.ref = "volley" }
 
 [plugins]

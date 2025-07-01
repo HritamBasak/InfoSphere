@@ -9,11 +9,11 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="340dp"
         android:layout_height="340dp"
         android:background="@drawable/background_feedback"
         app:cardCornerRadius="20dp"
-        app:cardElevation="5dp">
+        app:cardElevation="3dp">
 
 
         <LinearLayout
